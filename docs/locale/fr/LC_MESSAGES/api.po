@@ -1,0 +1,1108 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Jouichat Hamza
+# This file is distributed under the same license as the DAQARA Pipeline
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: DAQARA Pipeline 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-04-16 22:48-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: fr\n"
+"Language-Team: fr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../api.rst:2
+msgid "API Reference"
+msgstr "Référence API"
+
+#: of pipeline_processing2.EnsureX1Presence:1
+#: pipeline_processing2.FeatureReorder:1
+#: pipeline_processing2.SpectralInterpolator:1
+#: pipeline_processing2.SpectralPreprocessor:1
+msgid ""
+"Bases: :py:class:`~sklearn.base.BaseEstimator`, "
+":py:class:`~sklearn.base.TransformerMixin`"
+msgstr ""
+"Bases : :py:class:`~sklearn.base.BaseEstimator`, "
+":py:class:`~sklearn.base.TransformerMixin`"
+
+#: of pipeline_processing2.EnsureX1Presence:1
+msgid "Ensure a specific feature ('x1') is present in the data."
+msgstr "Assure la présence d'une caractéristique spécifique ('x1') dans les données."
+
+#: of pipeline_processing2.EnsureX1Presence:3
+msgid ""
+"This transformer checks if a designated feature, referred to as 'x1', "
+"exists in the input data `X`. If the feature is missing, it adds a new "
+"column/feature at the specified position or with the specified name, "
+"filling it with `fill_value`. It handles both pandas DataFrames and "
+"NumPy/sparse arrays."
+msgstr ""
+"Ce transformateur vérifie si une caractéristique désignée, appelée 'x1', "
+"existe dans les données d'entrée `X`. Si la caractéristique est manquante, il ajoute une nouvelle "
+"colonne/caractéristique à la position spécifiée ou avec le nom spécifié, "
+"en la remplissant avec `fill_value`. Il gère à la fois les DataFrames pandas et "
+"les tableaux NumPy/sparse."
+
+#: of pipeline_processing2.EnsureX1Presence:9
+msgid ""
+"For DataFrames, using `x1_col` is recommended for clarity. If provided, "
+"it prioritizes finding/adding the column by name and ensures it's at (or "
+"moved to) the `x1_index`. If `x1_col` is None or the input is an array, "
+"it relies on `x1_index` to check/add the feature at that position."
+msgstr ""
+"Pour les DataFrames, l'utilisation de `x1_col` est recommandée pour plus de clarté. S'il est fourni, "
+"il priorise la recherche/l'ajout de la colonne par nom et s'assure qu'elle se trouve à (ou "
+"est déplacée vers) `x1_index`. Si `x1_col` est None ou si l'entrée est un tableau, "
+"il se base sur `x1_index` pour vérifier/ajouter la caractéristique à cette position."
+
+#: ../../api.rst
+msgid "Parameters"
+msgstr "Paramètres"
+
+#: of pipeline_processing2.EnsureX1Presence:14
+msgid ""
+"The zero-based index where the 'x1' feature should be located. Used "
+"primarily for array inputs or as the target position for `x1_col` in "
+"DataFrames."
+msgstr ""
+"L'indice de base zéro où la caractéristique 'x1' doit être située. Utilisé "
+"principalement pour les entrées de tableau ou comme position cible pour `x1_col` dans "
+"les DataFrames."
+
+#: of pipeline_processing2.EnsureX1Presence:18
+msgid "The value used to populate the 'x1' feature if it needs to be added."
+msgstr "La valeur utilisée pour remplir la caractéristique 'x1' si elle doit être ajoutée."
+
+#: of pipeline_processing2.EnsureX1Presence:20
+msgid ""
+"The expected name of the 'x1' feature column if `X` is a pandas "
+"DataFrame. If provided: - If the column is missing, it's inserted at "
+"`x1_index` with this name. - If the column exists but is not at "
+"`x1_index`, it's moved. If None, the transformer operates based on "
+"`x1_index` only."
+msgstr ""
+"Le nom attendu de la colonne de caractéristique 'x1' si `X` est un DataFrame "
+"pandas. Si fourni : - Si la colonne est manquante, elle est insérée à "
+"`x1_index` avec ce nom. - Si la colonne existe mais n'est pas à "
+"`x1_index`, elle est déplacée. Si None, le transformateur fonctionne basé sur "
+"`x1_index` uniquement."
+
+#: of pipeline_processing2.EnsureX1Presence.fit:1
+#: pipeline_processing2.FeatureReorder.fit:1
+#: pipeline_processing2.SpectralInterpolator.fit:1
+msgid "Fit transformer."
+msgstr "Ajuster le transformateur."
+
+#: of pipeline_processing2.EnsureX1Presence.fit:3
+msgid ""
+"This transformer does not learn anything from the data, so this method "
+"just returns self."
+msgstr ""
+"Ce transformateur n'apprend rien des données, donc cette méthode "
+"retourne simplement self."
+
+#: of pipeline_processing2.EnsureX1Presence.fit:6
+msgid "The input data. Ignored."
+msgstr "Les données d'entrée. Ignoré."
+
+#: of pipeline_processing2.EnsureX1Presence.fit:8
+#: pipeline_processing2.SpectralPreprocessor.fit:8
+msgid "Ignored."
+msgstr "Ignoré."
+
+#: ../../api.rst
+msgid "Returns"
+msgstr "Retours"
+
+#: of pipeline_processing2.EnsureX1Presence.fit:11
+#: pipeline_processing2.FeatureReorder.fit:10
+#: pipeline_processing2.SpectralInterpolator.fit:11
+msgid "**self** -- Returns the instance itself."
+msgstr "**self** -- Retourne l'instance elle-même."
+
+#: ../../api.rst
+msgid "Return type"
+msgstr "Type de retour"
+
+#: of pipeline_processing2.EnsureX1Presence.transform:1
+msgid "Ensure the 'x1' feature is present."
+msgstr "Assure la présence de la caractéristique 'x1'."
+
+#: of pipeline_processing2.EnsureX1Presence.transform:3
+msgid ""
+"Adds the 'x1' feature column/feature if it's missing, filled with "
+"`fill_value`. If `X` is a DataFrame and `x1_col` is specified, it ensures"
+" the column exists with that name and attempts to place it at `x1_index`."
+msgstr ""
+"Ajoute la colonne/caractéristique 'x1' si elle est manquante, remplie avec "
+"`fill_value`. Si `X` est un DataFrame et `x1_col` est spécifié, il s'assure"
+" que la colonne existe avec ce nom et tente de la placer à `x1_index`."
+
+#: of pipeline_processing2.EnsureX1Presence.transform:8
+msgid "The input data to transform, shape (n_samples, n_features)."
+msgstr "Les données d'entrée à transformer, forme (n_samples, n_features)."
+
+#: of pipeline_processing2.EnsureX1Presence.transform:11
+msgid ""
+"**X_transformed** -- The data with the 'x1' feature ensured. Returns a "
+"DataFrame if the input was a DataFrame, otherwise returns a NumPy array. "
+"Note: Sparse matrix inputs may be converted to dense NumPy arrays."
+msgstr ""
+"**X_transformed** -- Les données avec la caractéristique 'x1' assurée. Retourne un "
+"DataFrame si l'entrée était un DataFrame, sinon retourne un tableau NumPy. "
+"Note : Les entrées de matrice sparse peuvent être converties en tableaux NumPy denses."
+
+#: of pipeline_processing2.SpectralInterpolator:1
+msgid "Interpolates spectral data columns to a common grid."
+msgstr "Interpole les colonnes de données spectrales sur une grille commune."
+
+#: of pipeline_processing2.SpectralInterpolator:3
+msgid ""
+"Selects specified spectral columns from the input DataFrame, interpolates"
+" them onto a new grid defined by `min_value`, `max_value`, and `step`, "
+"using an external `interpolate_spectra` function. The original spectral "
+"columns are dropped, and the new interpolated columns are appended."
+msgstr ""
+"Sélectionne les colonnes spectrales spécifiées du DataFrame d'entrée, les interpole"
+" sur une nouvelle grille définie par `min_value`, `max_value` et `step`, "
+"en utilisant une fonction externe `interpolate_spectra`. Les colonnes spectrales "
+"originales sont supprimées, et les nouvelles colonnes interpolées sont ajoutées."
+
+#: of pipeline_processing2.SpectralInterpolator:8
+msgid "Names of the columns containing the spectral data to be interpolated."
+msgstr "Noms des colonnes contenant les données spectrales à interpoler."
+
+#: of pipeline_processing2.SpectralInterpolator:10
+msgid ""
+"Minimum value (e.g., wavelength) for the target interpolation grid. Used "
+"as a fixed parameter."
+msgstr ""
+"Valeur minimale (par ex., longueur d'onde) pour la grille d'interpolation cible. Utilisée "
+"comme paramètre fixe."
+
+#: of pipeline_processing2.SpectralInterpolator:13
+msgid ""
+"Maximum value (e.g., wavelength) for the target interpolation grid. Used "
+"as a fixed parameter."
+msgstr ""
+"Valeur maximale (par ex., longueur d'onde) pour la grille d'interpolation cible. Utilisée "
+"comme paramètre fixe."
+
+#: of pipeline_processing2.SpectralInterpolator:16
+msgid "The step size for the target interpolation grid."
+msgstr "La taille du pas pour la grille d'interpolation cible."
+
+#: of pipeline_processing2.SpectralInterpolator:18
+msgid ""
+"Whether the underlying `interpolate_spectra` function should be allowed "
+"to extrapolate beyond the original data's range."
+msgstr ""
+"Indique si la fonction sous-jacente `interpolate_spectra` doit être autorisée "
+"à extrapoler au-delà de la plage des données d'origine."
+
+#: of pipeline_processing2.SpectralInterpolator.fit:3
+msgid ""
+"No learning is needed as parameters are fixed during initialization. "
+"Returns self."
+msgstr ""
+"Aucun apprentissage n'est nécessaire car les paramètres sont fixés lors de l'initialisation. "
+"Retourne self."
+
+#: of pipeline_processing2.SpectralInterpolator.transform:1
+msgid "Interpolate spectral columns."
+msgstr "Interpoler les colonnes spectrales."
+
+#: of pipeline_processing2.SpectralInterpolator.transform:3
+msgid ""
+"Selects `spectral_columns`, interpolates them using `interpolate_spectra`"
+" with the fixed parameters `min_value`, `max_value`, `step`, "
+"`extrapolate`. Drops the original `spectral_columns`, and appends the new"
+" interpolated columns."
+msgstr ""
+"Sélectionne `spectral_columns`, les interpole en utilisant `interpolate_spectra`"
+" avec les paramètres fixes `min_value`, `max_value`, `step`, "
+"`extrapolate`. Supprime les `spectral_columns` originales, et ajoute les nouvelles"
+" colonnes interpolées."
+
+#: of pipeline_processing2.SpectralInterpolator.transform:7
+msgid "Input data containing the `spectral_columns`. Must be a DataFrame."
+msgstr "Données d'entrée contenant les `spectral_columns`. Doit être un DataFrame."
+
+#: of pipeline_processing2.SpectralInterpolator.transform:10
+msgid ""
+"**X_transformed** -- Data with original spectral columns replaced by "
+"interpolated ones."
+msgstr ""
+"**X_transformed** -- Données avec les colonnes spectrales originales remplacées par "
+"les colonnes interpolées."
+
+#: ../../api.rst
+msgid "Raises"
+msgstr "Lève"
+
+#: of pipeline_processing2.CustomPipelineWrapper.fit:15
+#: pipeline_processing2.CustomPipelineWrapper.predict:30
+#: pipeline_processing2.CustomPipelineWrapper.predict_with_sampling:30
+#: pipeline_processing2.FeatureReorder.transform:15
+#: pipeline_processing2.SpectralInterpolator.transform:13
+#: pipeline_processing2.SpectralPreprocessor.fit:14
+#: pipeline_processing2.SpectralPreprocessor.transform:11
+msgid "If `X` is not a pandas DataFrame."
+msgstr "Si `X` n'est pas un DataFrame pandas."
+
+#: of pipeline_processing2.SpectralInterpolator.transform:14
+msgid "If `spectral_columns` are missing in `X`."
+msgstr "Si `spectral_columns` sont manquantes dans `X`."
+
+#: of pipeline_processing2.SpectralInterpolator.transform:15
+msgid "If the external `interpolate_spectra` function fails."
+msgstr "Si la fonction externe `interpolate_spectra` échoue."
+
+#: of pipeline_processing2.SpectralPreprocessor:1
+msgid "Applies scaling to specific columns and spectral pretreatments."
+msgstr "Applique la mise à l'échelle à des colonnes spécifiques et des prétraitements spectraux."
+
+#: of pipeline_processing2.SpectralPreprocessor:3
+msgid "This transformer performs two main actions:"
+msgstr "Ce transformateur effectue deux actions principales :"
+
+#: of pipeline_processing2.SpectralPreprocessor:5
+msgid ""
+"Scales specified non-spectral numeric columns (`specific_columns`) using "
+"`sklearn.preprocessing.StandardScaler`. The original columns are dropped "
+"and replaced by new columns with a `_scaled` suffix. The scaler is fitted"
+" during the `fit` method."
+msgstr ""
+"Met à l'échelle les colonnes numériques non spectrales spécifiées (`specific_columns`) en utilisant "
+"`sklearn.preprocessing.StandardScaler`. Les colonnes originales sont supprimées "
+"et remplacées par de nouvelles colonnes avec un suffixe `_scaled`. Le scaler est ajusté"
+" pendant la méthode `fit`."
+
+#: of pipeline_processing2.SpectralPreprocessor:9
+msgid ""
+"Applies a sequence of spectral preprocessing steps "
+"(`preprocessing_steps`) to the designated `spectral_columns` using an "
+"external `apply_pretreatments` function. These columns are modified *in "
+"place* during the `transform` method."
+msgstr ""
+"Applique une séquence d'étapes de prétraitement spectral "
+"(`preprocessing_steps`) aux `spectral_columns` désignées en utilisant une "
+"fonction externe `apply_pretreatments`. Ces colonnes sont modifiées *en "
+"place* pendant la méthode `transform`."
+
+#: of pipeline_processing2.SpectralPreprocessor:14
+msgid ""
+"Names of the columns containing spectral data to which "
+"`preprocessing_steps` will be applied."
+msgstr ""
+"Noms des colonnes contenant les données spectrales auxquelles "
+"`preprocessing_steps` sera appliqué."
+
+#: of pipeline_processing2.SpectralPreprocessor:17
+msgid ""
+"Names of non-spectral numeric columns to be scaled using StandardScaler. "
+"If None or empty, no scaling is performed. If provided, must be a list."
+msgstr ""
+"Noms des colonnes numériques non spectrales à mettre à l'échelle en utilisant StandardScaler. "
+"Si None ou vide, aucune mise à l'échelle n'est effectuée. Si fourni, doit être une liste."
+
+#: of pipeline_processing2.SpectralPreprocessor:20
+msgid ""
+"Configuration defining the sequence of preprocessing steps (e.g., ['snv',"
+" 'savgol']) passed to the `apply_pretreatments` function."
+msgstr ""
+"Configuration définissant la séquence des étapes de prétraitement (par ex., ['snv',"
+" 'savgol']) passée à la fonction `apply_pretreatments`."
+
+#: of pipeline_processing2.SpectralPreprocessor:26
+msgid ""
+"The fitted scaler instance used for `specific_columns`. Set during `fit` "
+"only if `specific_columns` is not empty."
+msgstr ""
+"L'instance de scaler ajustée utilisée pour `specific_columns`. Définie pendant `fit` "
+"uniquement si `specific_columns` n'est pas vide."
+
+#: of pipeline_processing2.CustomPipelineWrapper
+#: pipeline_processing2.SpectralPreprocessor
+msgid "type"
+msgstr "type"
+
+#: of pipeline_processing2.SpectralPreprocessor:29
+msgid "sklearn.preprocessing.StandardScaler or None"
+msgstr "sklearn.preprocessing.StandardScaler or None"
+
+#: of pipeline_processing2.SpectralPreprocessor:33
+msgid ""
+"The names generated for the scaled versions of `specific_columns`. "
+"Determined during `fit`."
+msgstr ""
+"Les noms générés pour les versions mises à l'échelle de `specific_columns`. "
+"Déterminés pendant `fit`."
+
+#: of pipeline_processing2.SpectralPreprocessor:36
+msgid "list of str"
+msgstr "list of str"
+
+#: of pipeline_processing2.SpectralPreprocessor:42
+msgid "The original code did not explicitly store ``n_features_in_`` or"
+msgstr "Le code original ne stockait pas explicitement ``n_features_in_`` ou"
+
+#: of pipeline_processing2.SpectralPreprocessor.fit:1
+msgid "Fit the preprocessor."
+msgstr "Ajuster le préprocesseur."
+
+#: of pipeline_processing2.SpectralPreprocessor.fit:3
+msgid ""
+"Fits the StandardScaler on `specific_columns` if they are provided. "
+"Validates the presence of required columns in the input data `X`."
+msgstr ""
+"Ajuste le StandardScaler sur `specific_columns` s'ils sont fournis. "
+"Valide la présence des colonnes requises dans les données d'entrée `X`."
+
+#: of pipeline_processing2.SpectralPreprocessor.fit:6
+msgid "The training input samples. Must be a DataFrame."
+msgstr "Les échantillons d'entrée d'entraînement. Doit être un DataFrame."
+
+#: of pipeline_processing2.SpectralPreprocessor.fit:11
+msgid "**self** -- Fitted transformer."
+msgstr "**self** -- Transformateur ajusté."
+
+#: of pipeline_processing2.SpectralPreprocessor.fit:15
+msgid "If `specific_columns` are provided but missing in `X`."
+msgstr "Si `specific_columns` sont fournies mais manquantes dans `X`."
+
+#: of pipeline_processing2.SpectralPreprocessor.transform:1
+msgid "Apply scaling and spectral preprocessing."
+msgstr "Appliquer la mise à l'échelle et le prétraitement spectral."
+
+#: of pipeline_processing2.SpectralPreprocessor.transform:3
+msgid "The input samples to transform. Must be a DataFrame."
+msgstr "Les échantillons d'entrée à transformer. Doit être un DataFrame."
+
+#: of pipeline_processing2.SpectralPreprocessor.transform:6
+msgid ""
+"**X_transformed** -- The transformed data with scaled columns (if any) "
+"replacing originals, and spectral columns modified in place. Column order"
+" may change."
+msgstr ""
+"**X_transformed** -- Les données transformées avec les colonnes mises à l'échelle (le cas échéant) "
+"remplaçant les originales, et les colonnes spectrales modifiées en place. L'ordre des colonnes"
+" peut changer."
+
+#: of pipeline_processing2.SpectralPreprocessor.transform:10
+msgid ""
+"If `fit` has not been called (specifically, if `scaler_` is needed     "
+"but has not been fitted)."
+msgstr ""
+"Si `fit` n'a pas été appelé (spécifiquement, si `scaler_` est nécessaire     "
+"mais n'a pas été ajusté)."
+
+#: of pipeline_processing2.SpectralPreprocessor.transform:12
+msgid ""
+"If required columns (`specific_columns` during scaling, or     "
+"`spectral_columns` during pretreatment) are missing in `X`, or if     "
+"spectral column names cannot be converted to float for wavelengths."
+msgstr ""
+"Si les colonnes requises (`specific_columns` pendant la mise à l'échelle, ou     "
+"`spectral_columns` pendant le prétraitement) sont manquantes dans `X`, ou si     "
+"les noms des colonnes spectrales ne peuvent pas être convertis en float pour les longueurs d'onde."
+
+#: of pipeline_processing2.SpectralPreprocessor.transform:13
+msgid "If the external `apply_pretreatments` function fails."
+msgstr "Si la fonction externe `apply_pretreatments` échoue."
+
+#: of pipeline_processing2.FeatureReorder:1
+msgid "Reorders DataFrame columns to a desired order."
+msgstr "Réorganise les colonnes du DataFrame dans un ordre souhaité."
+
+#: of pipeline_processing2.FeatureReorder:3
+msgid ""
+"Selects and reorders columns of an input DataFrame according to the "
+"`desired_order` list. Columns present in the input DataFrame but not in "
+"`desired_order` are dropped."
+msgstr ""
+"Sélectionne et réorganise les colonnes d'un DataFrame d'entrée selon la "
+"liste `desired_order`. Les colonnes présentes dans le DataFrame d'entrée mais pas dans "
+"`desired_order` sont supprimées."
+
+#: of pipeline_processing2.FeatureReorder:7
+msgid ""
+"A list containing the column names in the desired output order. All names"
+" in this list must exist in the input DataFrame during `transform`."
+msgstr ""
+"Une liste contenant les noms des colonnes dans l'ordre de sortie souhaité. Tous les noms"
+" de cette liste doivent exister dans le DataFrame d'entrée pendant `transform`."
+
+#: of pipeline_processing2.FeatureReorder.fit:3
+msgid "No fitting is needed; just returns self."
+msgstr "Aucun ajustement n'est nécessaire ; retourne simplement self."
+
+#: of pipeline_processing2.FeatureReorder.transform:1
+msgid "Reorder DataFrame columns."
+msgstr "Réorganiser les colonnes du DataFrame."
+
+#: of pipeline_processing2.FeatureReorder.transform:3
+msgid ""
+"Selects columns specified in `desired_order` from `X` and returns them in"
+" that specific order."
+msgstr ""
+"Sélectionne les colonnes spécifiées dans `desired_order` à partir de `X` et les retourne dans"
+" cet ordre spécifique."
+
+#: of pipeline_processing2.FeatureReorder.transform:6
+msgid ""
+"The input DataFrame whose columns need reordering. `n_features` must be "
+">= number of columns in `desired_order`."
+msgstr ""
+"Le DataFrame d'entrée dont les colonnes doivent être réorganisées. `n_features` doit être "
+">= au nombre de colonnes dans `desired_order`."
+
+#: of pipeline_processing2.FeatureReorder.transform:9
+msgid "Ignored. Present for API consistency."
+msgstr "Ignoré. Présent pour la cohérence de l'API."
+
+#: of pipeline_processing2.FeatureReorder.transform:12
+msgid ""
+"**X_reordered** -- DataFrame containing only the columns from "
+"`desired_order`, in that order."
+msgstr ""
+"**X_reordered** -- DataFrame contenant uniquement les colonnes de "
+"`desired_order`, dans cet ordre."
+
+#: of pipeline_processing2.FeatureReorder.transform:16
+msgid "If any column listed in `desired_order` is not found in `X`."
+msgstr "Si une colonne listée dans `desired_order` n'est pas trouvée dans `X`."
+
+#: of pipeline_processing2.CustomPipelineWrapper:1
+msgid "Bases: :py:class:`~sklearn.base.BaseEstimator`"
+msgstr "Bases : :py:class:`~sklearn.base.BaseEstimator`"
+
+#: of pipeline_processing2.CustomPipelineWrapper:1
+msgid "Wraps a pipeline for pH prediction with 'x1' solving capabilities."
+msgstr "Encapsule un pipeline pour la prédiction du pH avec des capacités de résolution pour 'x1'."
+
+#: of pipeline_processing2.CustomPipelineWrapper:3
+msgid ""
+"This estimator wraps a scikit-learn pipeline (expected to perform "
+"preprocessing and prediction). It adds specialized functionality for "
+"scenarios involving pH prediction where a key input feature (designated "
+"'x1', e.g., titration rate) might be known or might need to be determined"
+" algorithmically to achieve a specific target pH output."
+msgstr ""
+"Cet estimateur encapsule un pipeline scikit-learn (censé effectuer "
+"le prétraitement et la prédiction). Il ajoute des fonctionnalités spécialisées pour "
+"les scénarios impliquant la prédiction du pH où une caractéristique d'entrée clé (désignée "
+"'x1', par ex., le taux de titrage) peut être connue ou devoir être déterminée"
+" algorithmiquement pour atteindre un pH cible spécifique."
+
+#: of pipeline_processing2.CustomPipelineWrapper:9
+msgid ""
+"Key features include standard prediction, automatic fallback to solving "
+"if 'x1' is missing, direct solver access, response curve generation, and "
+"flexible output formatting for delta pH or final pH models."
+msgstr ""
+"Les caractéristiques clés incluent la prédiction standard, le repli automatique vers la résolution "
+"si 'x1' est manquant, l'accès direct au solveur, la génération de courbes de réponse et "
+"le formatage flexible de la sortie pour les modèles de pH delta ou de pH final."
+
+#: of pipeline_processing2.CustomPipelineWrapper:13
+msgid ""
+"The underlying pipeline responsible for data transformation and making "
+"raw predictions. Must be a fitted or fit-able pipeline."
+msgstr ""
+"Le pipeline sous-jacent responsable de la transformation des données et de la réalisation "
+"des prédictions brutes. Doit être un pipeline ajusté ou ajustable."
+
+#: of pipeline_processing2.CustomPipelineWrapper:16
+msgid ""
+"The name of the column in the input DataFrame containing the initial pH "
+"values. Required and used only if `predicts_delta_ph` is True."
+msgstr ""
+"Le nom de la colonne dans le DataFrame d'entrée contenant les valeurs initiales de pH. "
+"Requis et utilisé uniquement si `predicts_delta_ph` est True."
+
+#: of pipeline_processing2.CustomPipelineWrapper:19
+msgid ""
+"The name of the column in the input DataFrame representing the 'x1' "
+"feature (e.g., 'Rate (Titration)'). This is the feature that can be "
+"solved for. *(Note: Original parameter name was `x1_index`, but used like"
+" a column name)*."
+msgstr ""
+"Le nom de la colonne dans le DataFrame d'entrée représentant la caractéristique 'x1' "
+"(par ex., 'Rate (Titration)'). C'est la caractéristique qui peut être "
+"résolue. *(Note : Le nom du paramètre original était `x1_index`, mais utilisé comme"
+" un nom de colonne)*."
+
+#: of pipeline_processing2.CustomPipelineWrapper:23
+msgid ""
+"The default lower and upper bounds for the 'x1' feature when using solver"
+" methods (`solve_for_x1`, `predict_with_sampling`)."
+msgstr ""
+"Les limites inférieure et supérieure par défaut pour la caractéristique 'x1' lors de l'utilisation des méthodes"
+" de solveur (`solve_for_x1`, `predict_with_sampling`)."
+
+#: of pipeline_processing2.CustomPipelineWrapper:26
+#, python-brace-format
+msgid ""
+"Determines the output format of `predict` and results from "
+"`predict_with_sampling` when `predicts_delta_ph` is True: - 'delta': "
+"Output the predicted change in pH. - 'ph': Output the calculated final "
+"pH. - 'both': Output a dictionary `{'delta': ..., 'pH': ...}`. If "
+"`predicts_delta_ph` is False, this parameter is ignored (output is final "
+"pH)."
+msgstr ""
+"Détermine le format de sortie de `predict` et les résultats de "
+"`predict_with_sampling` lorsque `predicts_delta_ph` est True : - 'delta' : "
+"Sortir le changement de pH prédit. - 'ph' : Sortir le pH final calculé. "
+"- 'both' : Sortir un dictionnaire `{'delta': ..., 'pH': ...}`. Si "
+"`predicts_delta_ph` est False, ce paramètre est ignoré (la sortie est le pH final)."
+
+#: of pipeline_processing2.CustomPipelineWrapper:33
+msgid ""
+"Indicates whether the underlying `pipeline` predicts the change in pH "
+"(True) or the final pH directly (False)."
+msgstr ""
+"Indique si le `pipeline` sous-jacent prédit le changement de pH "
+"(True) ou le pH final directement (False)."
+
+#: of pipeline_processing2.CustomPipelineWrapper:36
+msgid "The default target pH value used by the solver methods if not overridden."
+msgstr "La valeur de pH cible par défaut utilisée par les méthodes du solveur si elle n'est pas surchargée."
+
+#: of pipeline_processing2.CustomPipelineWrapper:38
+msgid ""
+"The value used internally or by pipeline steps when 'x1' is missing or "
+"needs to be determined by the solver."
+msgstr ""
+"La valeur utilisée en interne ou par les étapes du pipeline lorsque 'x1' est manquant ou "
+"doit être déterminé par le solveur."
+
+#: of pipeline_processing2.CustomPipelineWrapper:44
+msgid ""
+"Names of features seen during `fit`, captured from the input DataFrame "
+"`X`. Set during `fit`, None otherwise."
+msgstr ""
+"Noms des caractéristiques vues pendant `fit`, capturés à partir du DataFrame d'entrée "
+"`X`. Défini pendant `fit`, None sinon."
+
+#: of pipeline_processing2.CustomPipelineWrapper:47
+msgid "list of str or None"
+msgstr "list of str or None"
+
+#: of pipeline_processing2.CustomPipelineWrapper:56
+msgid ":class:`sklearn.pipeline.Pipeline`"
+msgstr ":class:`sklearn.pipeline.Pipeline`"
+
+#: of pipeline_processing2.CustomPipelineWrapper:56
+msgid "The type of object expected for the `pipeline` parameter."
+msgstr "Le type d'objet attendu pour le paramètre `pipeline`."
+
+#: of pipeline_processing2.CustomPipelineWrapper:58
+msgid ":class:`scipy.optimize.brentq`"
+msgstr ":class:`scipy.optimize.brentq`"
+
+#: of pipeline_processing2.CustomPipelineWrapper:59
+msgid "The root-finding algorithm used by `solve_for_x1`."
+msgstr "L'algorithme de recherche de racine utilisé par `solve_for_x1`."
+
+#: of pipeline_processing2.CustomPipelineWrapper:62
+msgid "Notes"
+msgstr "Notes"
+
+#: of pipeline_processing2.CustomPipelineWrapper:63
+msgid "Requires input data `X` to be a pandas DataFrame for most methods."
+msgstr "Nécessite que les données d'entrée `X` soient un DataFrame pandas pour la plupart des méthodes."
+
+#: of pipeline_processing2.CustomPipelineWrapper:64
+msgid "The `x1_index` parameter acts as the column name for the 'x1' feature."
+msgstr "Le paramètre `x1_index` agit comme le nom de colonne pour la caractéristique 'x1'."
+
+#: of pipeline_processing2.CustomPipelineWrapper:65
+msgid ""
+"Assumes the underlying `pipeline` is correctly configured to handle the "
+"data transformations and has a `predict` method."
+msgstr ""
+"Suppose que le `pipeline` sous-jacent est correctement configuré pour gérer les "
+"transformations de données et possède une méthode `predict`."
+
+#: of pipeline_processing2.CustomPipelineWrapper:67
+msgid "Solver methods rely on the relationship between 'x1' and predicted pH."
+msgstr "Les méthodes du solveur dépendent de la relation entre 'x1' et le pH prédit."
+
+#: of pipeline_processing2.CustomPipelineWrapper.fit:1
+msgid "Fit the underlying pipeline."
+msgstr "Ajuster le pipeline sous-jacent."
+
+#: of pipeline_processing2.CustomPipelineWrapper.fit:3
+msgid ""
+"Stores the feature names from the input DataFrame `X` and then calls the "
+"`fit` method of the wrapped `pipeline`."
+msgstr ""
+"Stocke les noms des caractéristiques du DataFrame d'entrée `X` puis appelle la "
+"méthode `fit` du `pipeline` encapsulé."
+
+#: of pipeline_processing2.CustomPipelineWrapper.fit:6
+msgid ""
+"Training data. Must contain `initialpH_col` if `predicts_delta_ph` is "
+"True. Must be a DataFrame."
+msgstr ""
+"Données d'entraînement. Doit contenir `initialpH_col` si `predicts_delta_ph` est "
+"True. Doit être un DataFrame."
+
+#: of pipeline_processing2.CustomPipelineWrapper.fit:9
+msgid "Target values corresponding to `X`."
+msgstr "Valeurs cibles correspondant à `X`."
+
+#: of pipeline_processing2.CustomPipelineWrapper.fit:12
+msgid "**self** -- The fitted wrapper instance."
+msgstr "**self** -- L'instance de wrapper ajustée."
+
+#: of pipeline_processing2.CustomPipelineWrapper.fit:16
+msgid "If `predicts_delta_ph` is True and `initialpH_col` is missing."
+msgstr "Si `predicts_delta_ph` est True et `initialpH_col` est manquant."
+
+#: of pipeline_processing2.CustomPipelineWrapper.fit:17
+msgid "If the underlying pipeline fitting fails."
+msgstr "Si l'ajustement du pipeline sous-jacent échoue."
+
+#: of pipeline_processing2.CustomPipelineWrapper.predict:1
+msgid "Predict target values for X."
+msgstr "Prédire les valeurs cibles pour X."
+
+#: of pipeline_processing2.CustomPipelineWrapper.predict:3
+msgid ""
+"Uses the pipeline's raw prediction if the 'x1' column (`self.x1_index`) "
+"exists and is not all NaN. Otherwise, falls back to "
+"`predict_with_sampling`. Formats output based on `self.response` and "
+"`self.predicts_delta_ph`."
+msgstr ""
+"Utilise la prédiction brute du pipeline si la colonne 'x1' (`self.x1_index`) "
+"existe et n'est pas entièrement NaN. Sinon, se replie sur "
+"`predict_with_sampling`. Formate la sortie en fonction de `self.response` et "
+"`self.predicts_delta_ph`."
+
+#: of pipeline_processing2.CustomPipelineWrapper.predict:7
+msgid ""
+"Input data for prediction. Must be a DataFrame. Must contain "
+"`initialpH_col` if `predicts_delta_ph` is True."
+msgstr ""
+"Données d'entrée pour la prédiction. Doit être un DataFrame. Doit contenir "
+"`initialpH_col` si `predicts_delta_ph` est True."
+
+#: of pipeline_processing2.CustomPipelineWrapper.predict:10
+msgid ""
+"Number of points for response curve if `predict_with_sampling` is "
+"triggered."
+msgstr ""
+"Nombre de points pour la courbe de réponse si `predict_with_sampling` est "
+"déclenché."
+
+#: of pipeline_processing2.CustomPipelineWrapper.predict:12
+msgid ""
+"Target pH for solver if `predict_with_sampling` is triggered. Defaults to"
+" `self.target_ph`."
+msgstr ""
+"pH cible pour le solveur si `predict_with_sampling` est déclenché. Par défaut "
+"`self.target_ph`."
+
+#: of pipeline_processing2.CustomPipelineWrapper.predict:15
+msgid ""
+"Solver method to use if `predict_with_sampling` is triggered. *(Note: "
+"Original code passed 'vectorized' only to one solver type)*."
+msgstr ""
+"Méthode de solveur à utiliser si `predict_with_sampling` est déclenché. *(Note : "
+"Le code original passait 'vectorized' uniquement à un type de solveur)*."
+
+#: of pipeline_processing2.CustomPipelineWrapper.predict:18
+msgid ""
+"Additional arguments. Solver-specific ones are used by solvers, others "
+"are passed to `predict_raw`."
+msgstr ""
+"Arguments supplémentaires. Ceux spécifiques au solveur sont utilisés par les solveurs, les autres "
+"sont passés à `predict_raw`."
+
+#: of pipeline_processing2.CustomPipelineWrapper.predict:22
+msgid ""
+"**predictions** --  - If predicting directly: A pandas Series (dtype "
+"float or object) or a list   of dictionaries (if `response='both'`). - If"
+" solving/sampling: Returns the output of `predict_with_sampling`   (a "
+"list of dictionaries)."
+msgstr ""
+"**predictions** --  - Si prédiction directe : Une Series pandas (dtype "
+"float ou object) ou une liste   de dictionnaires (si `response='both'`). - Si"
+" résolution/échantillonnage : Retourne la sortie de `predict_with_sampling`   (une "
+"liste de dictionnaires)."
+
+#: of pipeline_processing2.CustomPipelineWrapper.predict:22
+msgid "**predictions** --"
+msgstr "**predictions** --"
+
+#: of pipeline_processing2.CustomPipelineWrapper.predict:24
+msgid ""
+"If predicting directly: A pandas Series (dtype float or object) or a list"
+" of dictionaries (if `response='both'`)."
+msgstr ""
+"Si prédiction directe : Une Series pandas (dtype float ou object) ou une liste"
+" de dictionnaires (si `response='both'`)."
+
+#: of pipeline_processing2.CustomPipelineWrapper.predict:26
+msgid ""
+"If solving/sampling: Returns the output of `predict_with_sampling` (a "
+"list of dictionaries)."
+msgstr ""
+"Si résolution/échantillonnage : Retourne la sortie de `predict_with_sampling` (une "
+"liste de dictionnaires)."
+
+#: of pipeline_processing2.CustomPipelineWrapper.predict:31
+msgid "If required columns are missing or contain NaNs when needed."
+msgstr "Si les colonnes requises sont manquantes ou contiennent des NaN lorsque nécessaire."
+
+#: of pipeline_processing2.CustomPipelineWrapper.predict:32
+msgid "If prediction or formatting fails."
+msgstr "Si la prédiction ou le formatage échoue."
+
+#: of pipeline_processing2.CustomPipelineWrapper.predict_raw:1
+msgid "Call the predict method of the underlying pipeline directly."
+msgstr "Appelle directement la méthode predict du pipeline sous-jacent."
+
+#: of pipeline_processing2.CustomPipelineWrapper.predict_raw:3
+msgid "Filters out solver-specific keyword arguments before calling `predict`."
+msgstr "Filtre les arguments de mots-clés spécifiques au solveur avant d'appeler `predict`."
+
+#: of pipeline_processing2.CustomPipelineWrapper.predict_raw:5
+msgid ""
+"Data for which to make predictions. Original code did not explicitly "
+"require DataFrame here, but subsequent steps often assume it."
+msgstr ""
+"Données pour lesquelles faire des prédictions. Le code original ne nécessitait pas explicitement "
+"de DataFrame ici, mais les étapes suivantes le supposent souvent."
+
+#: of pipeline_processing2.CustomPipelineWrapper.predict_raw:8
+msgid ""
+"Additional keyword arguments for the pipeline's predict method. Keys "
+"'step', 'max_rate', 'grid_points', 'use_grid_search' are removed."
+msgstr ""
+"Arguments de mots-clés supplémentaires pour la méthode predict du pipeline. Les clés "
+"'step', 'max_rate', 'grid_points', 'use_grid_search' sont supprimées."
+
+#: of pipeline_processing2.CustomPipelineWrapper.predict_raw:12
+msgid "**predictions** -- Raw predictions from the pipeline."
+msgstr "**predictions** -- Prédictions brutes du pipeline."
+
+#: of pipeline_processing2.CustomPipelineWrapper.predict_raw:15
+msgid "If the underlying pipeline prediction fails."
+msgstr "Si la prédiction du pipeline sous-jacent échoue."
+
+#: of pipeline_processing2.CustomPipelineWrapper.predict_with_sampling:1
+msgid "Generate response curves (output vs. 'x1') for samples."
+msgstr "Générer des courbes de réponse (sortie vs 'x1') pour les échantillons."
+
+#: of pipeline_processing2.CustomPipelineWrapper.predict_with_sampling:3
+msgid ""
+"Processes each row in `X` independently. For each sample, it uses a "
+"solver (`solver_method`) to find the 'x1' value (`x1_max`) needed to "
+"reach the `target` pH. It then predicts outputs across a range of 'x1' "
+"values from 0 to `x1_max`. Includes a 'highlight' point if the original "
+"sample had an 'x1' value."
+msgstr ""
+"Traite chaque ligne de `X` indépendamment. Pour chaque échantillon, il utilise un "
+"solveur (`solver_method`) pour trouver la valeur 'x1' (`x1_max`) nécessaire pour "
+"atteindre le pH `target`. Il prédit ensuite les sorties sur une plage de valeurs 'x1' "
+"de 0 à `x1_max`. Inclut un point 'highlight' si l'échantillon original "
+"avait une valeur 'x1'."
+
+#: of pipeline_processing2.CustomPipelineWrapper.predict_with_sampling:9
+msgid ""
+"Input data samples. Must be a DataFrame. Must contain `initialpH_col` "
+"(non-NaN) if `predicts_delta_ph` is True."
+msgstr ""
+"Échantillons de données d'entrée. Doit être un DataFrame. Doit contenir `initialpH_col` "
+"(non-NaN) si `predicts_delta_ph` est True."
+
+#: of pipeline_processing2.CustomPipelineWrapper.predict_with_sampling:12
+msgid "Number of points for the response curve [0, x1_max]. Must be >= 2."
+msgstr "Nombre de points pour la courbe de réponse [0, x1_max]. Doit être >= 2."
+
+#: of pipeline_processing2.CustomPipelineWrapper.predict_with_sampling:14
+msgid "The target pH used by the solver. Defaults to `self.target_ph`."
+msgstr "Le pH cible utilisé par le solveur. Par défaut `self.target_ph`."
+
+#: of pipeline_processing2.CustomPipelineWrapper.predict_with_sampling:16
+msgid "Method used to find `x1_max`."
+msgstr "Méthode utilisée pour trouver `x1_max`."
+
+#: of pipeline_processing2.CustomPipelineWrapper.predict_with_sampling:18
+msgid ""
+"Additional arguments passed to the solver function and subsequently to "
+"`predict_raw` for curve generation."
+msgstr ""
+"Arguments supplémentaires passés à la fonction solveur et ensuite à "
+"`predict_raw` pour la génération de la courbe."
+
+#: of pipeline_processing2.CustomPipelineWrapper.predict_with_sampling:22
+msgid ""
+"**results** -- List of dictionaries, one per input sample. Each contains:"
+" 'x1_max': Solved 'x1' (float or np.nan). 'x1_candidates': Array of 'x1' "
+"values for curve (shape `(num_points,)`). 'predictions': List of "
+"corresponding formatted predictions. 'highlight': Tuple `(provided_x1, "
+"prediction)` or None."
+msgstr ""
+"**results** -- Liste de dictionnaires, un par échantillon d'entrée. Chacun contient :"
+" 'x1_max' : 'x1' résolu (float ou np.nan). 'x1_candidates' : Tableau des valeurs 'x1' "
+"pour la courbe (forme `(num_points,)`). 'predictions' : Liste des "
+"prédictions formatées correspondantes. 'highlight' : Tuple `(provided_x1, "
+"prediction)` ou None."
+
+#: of pipeline_processing2.CustomPipelineWrapper.predict_with_sampling:29
+msgid "If `fit` has not been called."
+msgstr "Si `fit` n'a pas été appelé."
+
+#: of pipeline_processing2.CustomPipelineWrapper.predict_with_sampling:31
+msgid "If required columns missing/NaN, or `num_points` invalid."
+msgstr "Si les colonnes requises sont manquantes/NaN, ou si `num_points` est invalide."
+
+#: of pipeline_processing2.CustomPipelineWrapper.predict_with_sampling:32
+msgid "If solver or prediction calls fail critically."
+msgstr "Si les appels au solveur ou à la prédiction échouent de manière critique."
+
+#: of sklearn.utils._metadata_requests.RequestMethod.__get__.<locals>.func:1
+msgid "Request metadata passed to the ``predict`` method."
+msgstr "Demander les métadonnées passées à la méthode ``predict``."
+
+#: of sklearn.utils._metadata_requests.RequestMethod.__get__.<locals>.func:3
+msgid ""
+"Note that this method is only relevant if "
+"``enable_metadata_routing=True`` (see :func:`sklearn.set_config`). Please"
+" see :ref:`User Guide <metadata_routing>` on how the routing mechanism "
+"works."
+msgstr ""
+"Notez que cette méthode n'est pertinente que si "
+"``enable_metadata_routing=True`` (voir :func:`sklearn.set_config`). Veuillez"
+" consulter le :ref:`Guide de l'utilisateur <metadata_routing>` sur le fonctionnement du mécanisme de routage."
+
+#: of sklearn.utils._metadata_requests.RequestMethod.__get__.<locals>.func:8
+msgid "The options for each parameter are:"
+msgstr "Les options pour chaque paramètre sont :"
+
+#: of sklearn.utils._metadata_requests.RequestMethod.__get__.<locals>.func:10
+msgid ""
+"``True``: metadata is requested, and passed to ``predict`` if provided. "
+"The request is ignored if metadata is not provided."
+msgstr ""
+"``True`` : les métadonnées sont demandées et transmises à ``predict`` si elles sont fournies. "
+"La demande est ignorée si les métadonnées ne sont pas fournies."
+
+#: of sklearn.utils._metadata_requests.RequestMethod.__get__.<locals>.func:12
+msgid ""
+"``False``: metadata is not requested and the meta-estimator will not pass"
+" it to ``predict``."
+msgstr ""
+"``False`` : les métadonnées ne sont pas demandées et le méta-estimateur ne les transmettra pas"
+" à ``predict``."
+
+#: of sklearn.utils._metadata_requests.RequestMethod.__get__.<locals>.func:14
+msgid ""
+"``None``: metadata is not requested, and the meta-estimator will raise an"
+" error if the user provides it."
+msgstr ""
+"``None`` : les métadonnées ne sont pas demandées, et le méta-estimateur lèvera une"
+" erreur si l'utilisateur les fournit."
+
+#: of sklearn.utils._metadata_requests.RequestMethod.__get__.<locals>.func:16
+msgid ""
+"``str``: metadata should be passed to the meta-estimator with this given "
+"alias instead of the original name."
+msgstr ""
+"``str`` : les métadonnées doivent être transmises au méta-estimateur avec cet alias donné "
+"au lieu du nom original."
+
+#: of sklearn.utils._metadata_requests.RequestMethod.__get__.<locals>.func:18
+msgid ""
+"The default (``sklearn.utils.metadata_routing.UNCHANGED``) retains the "
+"existing request. This allows you to change the request for some "
+"parameters and not others."
+msgstr ""
+"La valeur par défaut (``sklearn.utils.metadata_routing.UNCHANGED``) conserve la "
+"demande existante. Cela vous permet de modifier la demande pour certains "
+"paramètres et pas d'autres."
+
+#: of sklearn.utils._metadata_requests.RequestMethod.__get__.<locals>.func:25
+msgid ""
+"This method is only relevant if this estimator is used as a sub-estimator"
+" of a meta-estimator, e.g. used inside a "
+":class:`~sklearn.pipeline.Pipeline`. Otherwise it has no effect."
+msgstr ""
+"Cette méthode n'est pertinente que si cet estimateur est utilisé comme sous-estimateur"
+" d'un méta-estimateur, par ex. utilisé à l'intérieur d'un "
+":class:`~sklearn.pipeline.Pipeline`. Sinon, elle n'a aucun effet."
+
+#: of sklearn.utils._metadata_requests.RequestMethod.__get__.<locals>.func:29
+msgid "Metadata routing for ``num_points`` parameter in ``predict``."
+msgstr "Routage des métadonnées pour le paramètre ``num_points`` dans ``predict``."
+
+#: of sklearn.utils._metadata_requests.RequestMethod.__get__.<locals>.func:31
+msgid "Metadata routing for ``solver_method`` parameter in ``predict``."
+msgstr "Routage des métadonnées pour le paramètre ``solver_method`` dans ``predict``."
+
+#: of sklearn.utils._metadata_requests.RequestMethod.__get__.<locals>.func:33
+msgid "Metadata routing for ``target`` parameter in ``predict``."
+msgstr "Routage des métadonnées pour le paramètre ``target`` dans ``predict``."
+
+#: of sklearn.utils._metadata_requests.RequestMethod.__get__.<locals>.func:36
+msgid "**self** -- The updated object."
+msgstr "**self** -- L'objet mis à jour."
+
+#: of pipeline_processing2.CustomPipelineWrapper.solve_for_x1:1
+msgid "Solve for 'x1' using root-finding (for one sample)."
+msgstr "Résoudre pour 'x1' en utilisant la recherche de racine (pour un échantillon)."
+
+#: of pipeline_processing2.CustomPipelineWrapper.solve_for_x1:3
+msgid ""
+"Finds the 'x1' value for a single input `sample` that results in a "
+"predicted final pH exactly equal to `target`, using "
+"`scipy.optimize.brentq`. Optionally performs a preliminary grid search."
+msgstr ""
+"Trouve la valeur 'x1' pour un seul échantillon d'entrée `sample` qui résulte en un "
+"pH final prédit exactement égal à `target`, en utilisant "
+"`scipy.optimize.brentq`. Effectue éventuellement une recherche préliminaire sur grille."
+
+#: of pipeline_processing2.CustomPipelineWrapper.solve_for_x1:7
+#: pipeline_processing2.CustomPipelineWrapper.solve_for_x1_vectorized_incremental:8
+msgid ""
+"The input sample. Must contain required features (incl. non-NaN "
+"`initialpH_col` if `predicts_delta_ph` is True) except 'x1'."
+msgstr ""
+"L'échantillon d'entrée. Doit contenir les caractéristiques requises (y compris `initialpH_col` non-NaN "
+"si `predicts_delta_ph` est True) sauf 'x1'."
+
+#: of pipeline_processing2.CustomPipelineWrapper.solve_for_x1:10
+msgid "The target pH value to achieve."
+msgstr "La valeur de pH cible à atteindre."
+
+#: of pipeline_processing2.CustomPipelineWrapper.solve_for_x1:12
+msgid ""
+"Specific bounds (min_x1, max_x1) for the solver search. If None, defaults"
+" to `self.x1_bounds`."
+msgstr ""
+"Limites spécifiques (min_x1, max_x1) pour la recherche du solveur. Si None, utilise par défaut"
+" `self.x1_bounds`."
+
+#: of pipeline_processing2.CustomPipelineWrapper.solve_for_x1:15
+msgid ""
+"If True, performs a coarse grid search within `bounds` to find a narrower"
+" interval for `brentq`."
+msgstr ""
+"Si True, effectue une recherche grossière sur grille dans `bounds` pour trouver un intervalle"
+" plus étroit pour `brentq`."
+
+#: of pipeline_processing2.CustomPipelineWrapper.solve_for_x1:18
+msgid ""
+"Number of points for the preliminary grid search if `use_grid_search` is "
+"True."
+msgstr ""
+"Nombre de points pour la recherche préliminaire sur grille si `use_grid_search` est "
+"True."
+
+#: of pipeline_processing2.CustomPipelineWrapper.solve_for_x1:21
+msgid "Additional arguments passed to `self.predict_raw` after filtering."
+msgstr "Arguments supplémentaires passés à `self.predict_raw` après filtrage."
+
+#: of pipeline_processing2.CustomPipelineWrapper.solve_for_x1:24
+msgid "**x1_solution** -- The 'x1' value found, or `np.nan` if solving fails."
+msgstr "**x1_solution** -- La valeur 'x1' trouvée, ou `np.nan` si la résolution échoue."
+
+#: of pipeline_processing2.CustomPipelineWrapper.solve_for_x1:27
+#: pipeline_processing2.CustomPipelineWrapper.solve_for_x1_vectorized_incremental:25
+msgid "If sample type is invalid."
+msgstr "Si le type d'échantillon est invalide."
+
+#: of pipeline_processing2.CustomPipelineWrapper.solve_for_x1:28
+msgid ""
+"If required columns are missing or initial pH is NaN (when needed),     "
+"or grid parameters invalid."
+msgstr ""
+"Si les colonnes requises sont manquantes ou si le pH initial est NaN (lorsque nécessaire),     "
+"ou si les paramètres de la grille sont invalides."
+
+#: of pipeline_processing2.CustomPipelineWrapper.solve_for_x1:29
+msgid "If prediction within the solver objective function fails."
+msgstr "Si la prédiction dans la fonction objectif du solveur échoue."
+
+#: of
+#: pipeline_processing2.CustomPipelineWrapper.solve_for_x1_vectorized_incremental:1
+msgid "Solve for 'x1' using vectorized grid search (for one sample)."
+msgstr "Résoudre pour 'x1' en utilisant une recherche vectorisée sur grille (pour un échantillon)."
+
+#: of
+#: pipeline_processing2.CustomPipelineWrapper.solve_for_x1_vectorized_incremental:3
+msgid ""
+"Finds the lowest 'x1' value (>= 0) for a single input `sample` that "
+"results in a predicted final pH >= `target`. Uses a grid search."
+msgstr ""
+"Trouve la plus petite valeur 'x1' (>= 0) pour un seul échantillon d'entrée `sample` qui "
+"résulte en un pH final prédit >= `target`. Utilise une recherche sur grille."
+
+#: of
+#: pipeline_processing2.CustomPipelineWrapper.solve_for_x1_vectorized_incremental:6
+msgid "*Note: Original code used `max_rate=100` as default in one place.*"
+msgstr "*Note : Le code original utilisait `max_rate=100` par défaut à un endroit.*"
+
+#: of
+#: pipeline_processing2.CustomPipelineWrapper.solve_for_x1_vectorized_incremental:11
+msgid "The target pH value to achieve or exceed."
+msgstr "La valeur de pH cible à atteindre ou dépasser."
+
+#: of
+#: pipeline_processing2.CustomPipelineWrapper.solve_for_x1_vectorized_incremental:13
+msgid "The step size for the 'x1' grid search."
+msgstr "La taille du pas pour la recherche sur grille 'x1'."
+
+#: of
+#: pipeline_processing2.CustomPipelineWrapper.solve_for_x1_vectorized_incremental:15
+msgid ""
+"Maximum 'x1' value for the grid search. If None, defaults to "
+"`self.x1_bounds[1]`. *(Original default was 100 here)*."
+msgstr ""
+"Valeur maximale 'x1' pour la recherche sur grille. Si None, utilise par défaut "
+"`self.x1_bounds[1]`. *(La valeur par défaut originale était 100 ici)*."
+
+#: of
+#: pipeline_processing2.CustomPipelineWrapper.solve_for_x1_vectorized_incremental:18
+msgid ""
+"Additional arguments passed to `self.predict` (used recursively in "
+"original) or `self.predict_raw`. Using `predict_raw` avoids infinite "
+"recursion."
+msgstr ""
+"Arguments supplémentaires passés à `self.predict` (utilisé récursivement dans "
+"l'original) ou `self.predict_raw`. L'utilisation de `predict_raw` évite la récursion "
+"infinie."
+
+#: of
+#: pipeline_processing2.CustomPipelineWrapper.solve_for_x1_vectorized_incremental:22
+msgid ""
+"**x1_solution** -- The lowest 'x1' value found that meets the target, or "
+"`np.nan`."
+msgstr ""
+"**x1_solution** -- La plus petite valeur 'x1' trouvée qui atteint la cible, ou "
+"`np.nan`."
+
+#: of
+#: pipeline_processing2.CustomPipelineWrapper.solve_for_x1_vectorized_incremental:26
+msgid "If required columns are missing or initial pH is NaN (when needed)."
+msgstr "Si les colonnes requises sont manquantes ou si le pH initial est NaN (lorsque nécessaire)."
+
+#: of
+#: pipeline_processing2.CustomPipelineWrapper.solve_for_x1_vectorized_incremental:27
+msgid "If prediction within the solver fails."
+msgstr "Si la prédiction dans le solveur échoue."
+

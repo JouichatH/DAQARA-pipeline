@@ -1,0 +1,23 @@
+# Sphinx build output
+docs/_build/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# User specified files
+pipeline_processing2.py
+
+# Conda environment files (optional but good practice)
+/environment.yml
+/.conda/
+
+# VS Code settings
+.vscode/
+
+# Other common ignores
+*.log
+*.swp
+*.swo
+Thumbs.db
+.DS_Store
