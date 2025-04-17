@@ -6,7 +6,7 @@ __pycache__/
 *.pyc
 
 # User specified files
-#pipeline_processing2.py
+pipeline_processing2.py
 
 # Conda environment files (optional but good practice)
 /environment.yml
