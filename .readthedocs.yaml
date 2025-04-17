@@ -9,11 +9,6 @@ build:
   os: ubuntu-22.04  # Using 22.04 as a stable default, adjust if needed
   tools:
     python: "3.9"     # Matching local Conda env version
-  # Add jobs for custom build steps
-  jobs:
-    post_checkout:
-      # Compile translations before building docs
-      - sphinx-intl build --locale-dir docs/locale/
 
 # Build documentation in the "docs/" directory with Sphinx
 sphinx:
