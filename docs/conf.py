@@ -30,6 +30,10 @@ extensions = [
     'sphinxcontrib.napoleon',
 ]
 
+# Add modules to mock here if they have dependencies not installed
+# or if the module itself should not be imported (like gitignored files)
+autodoc_mock_imports = ['pipeline_processing2']
+
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
