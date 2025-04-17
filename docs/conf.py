@@ -30,6 +30,9 @@ extensions = [
     'sphinxcontrib.napoleon',
 ]
 
+# Add modules to mock here
+autodoc_mock_imports = ["numpy", "pandas", "scipy", "sklearn"]
+
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
